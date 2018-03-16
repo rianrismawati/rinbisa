@@ -26,7 +26,7 @@
              <div class="panel panel-default">
                 <div class="panel-heading">Dashboard</div>
                    <div class="panel-body">
-                        <a href="{{ route('userCtrl.viewEdit', Auth::id() )}}">Edit Profile</a><br>
+                        <a href="{{ route('userCtrl.viewedit', Auth::id() )}}">Edit Profile</a><br>
                         <a href="{{ route('userCtrl.viewdash') }}">Campaign</a><br>
                         <a href="{{ route('userCtrl.viewdon') }}">Donasi</a><br>
                         <a href="#">Verifikasi Akun</a><br>

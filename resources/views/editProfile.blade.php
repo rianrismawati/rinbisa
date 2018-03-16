@@ -4,27 +4,27 @@
 
 	<div class="container">
 		<div class="row">
-			<form method="POST" action="{{ route('userCtrl.editprof', $ambil->id)}}">
+			<form method="post" action="{{ route('userCtrl.editprof', $edit->id)}}" enctype="multipart/form-data">
 				<div class="form-group">
-					<label>Nama</label>
-					<input type="text" name="" value="{{$ambil->name}}" readonly class="form-control">
-				</div>
-				<div class="form-group">
-					<label>Email</label>
-					<input type="email" name="" value="{{$ambil->email}}" readonly class="form-control">
-				</div>
-				<div class="form-group">
-					<label>No Telephone</label>
-					<input type="number" name="nt" class="form-control">
-				</div>
-				<div class="form-group">
-					<label>Lokasi Tempat Tinggal</label>
-					<textarea name="lok" class="form-control"></textarea>
-				</div>
-				<div class="form-group">
-					<label>Bio</label>
-					<textarea name="bio" class="form-control"></textarea>
-				</div>
+	                <label>Nama Lengkap</label>
+	                <input type="text" name="nl" value="{{$edit->name}}" readonly class="form-control">
+	            </div>	
+	            <div class="form-group">
+	                <label>Email</label>
+	                <input type="text" name="email" value="{{$edit->email}}" readonly class="form-control">
+	            </div>	
+	            <div class="form-group">
+	                <label>No Telepon</label>
+	                <input type="text" name="nt" class="form-control" value="{{$edit->no_tlp}}" >
+	            </div>	
+	            <div class="form-group">
+	                <label>Lokasi</label>
+	                <input type="text" name="lok" class="form-control" value="{{$edit->lokasi}}" >
+	            </div>
+	            <div class="form-group">
+	                <label>Bio Singkat</label>
+	                <textarea name="bio" class="form-control" >{{$edit->bio}}</textarea>
+	            </div>
 				<div class="form-group">
 					<label>Foto Profile</label>
 					<input type="file" name="foto_prof" class="form-control">
