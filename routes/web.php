@@ -52,7 +52,18 @@ Route::post('/addCampaign', 'userController@prosesAdd')->name('userCtrl.prosesAd
 Route::get('/donasi', 'userController@viewdon')->name('userCtrl.viewdon');
 
 //Pelayanan Administrasi Terpadu Kelurahan
-Route::get('/pelayanan_ter', 'pelayananController@viewPel');
-Route::get('{id}/detailPel', 'pelayananController@detPel')->name('plynCtrl@detPel');
+Route::get('/pelayanan_ter', 'pelayananController@viewPel')->name('back');
+Route::get('/sktm', 'pelayananController@detTM')->name('plynCtrl@detTM');
+Route::post('/sktm', 'pelayananController@prosTM')->name('plynCtrl@prosTM');
+Route::get('/sktmas', 'pelayananController@detAS')->name('plynCtrl@detAS');
+Route::post('/sktmas', 'pelayananController@prosAS')->name('plynCtrl@prosAS');
+Route::get('/skpd', 'pelayananController@detPD')->name('plynCtrl@detPD');
+Route::post('/skpd', 'pelayananController@prosPD')->name('plynCtrl@prosPD');
+Route::get('/skdu', 'pelayananController@detDU')->name('plynCtrl@detDU');
+Route::post('/skdu', 'pelayananController@prosDU')->name('plynCtrl@prosDU');
+Route::get('/skbb', 'pelayananController@detBB')->name('plynCtrl@detBB');
+Route::post('/skbb', 'pelayananController@prosBB')->name('plynCtrl@prosBB');
+Route::get('/sik', 'pelayananController@detSik')->name('plynCtrl@detSik');
+Route::post('/sik', 'pelayananController@prosSik')->name('plynCtrl@prosSik');
 
 

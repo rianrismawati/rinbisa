@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Skpd extends Model
 {
     //
-    protected $table = 'skdu';
+    protected $table = 'skpd';
     public $timestamps = false;
 }

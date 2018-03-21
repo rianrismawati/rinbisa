@@ -30,7 +30,7 @@
 		      <img src="{{ asset('img/document.png') }}" alt="..." class="img-circle img-responsive img-raised" >
 		      <div class="caption"><br>
 		        <p>Surat Keterangan Tidak Mampu</p><br>
-		        <a href="#" class="btn btn-primary" role="button">AJUKAN</a>
+		        <a href="{{ route('plynCtrl@detTM') }}" class="btn btn-primary" role="button">AJUKAN</a>
 		      </div>
 		    </center>
 	</div>
@@ -39,7 +39,7 @@
 		      <img src="{{ asset('img/document.png') }}" alt="..." class="img-circle img-responsive img-raised" >
 		      <div class="caption"><br>
 		        <p>Surat Keterangan Tidak Mampu Anak Sekolah</p><br>
-		        <a href="#" class="btn btn-primary" role="button">AJUKAN</a>
+		        <a href="{{ route('plynCtrl@detAS') }}" class="btn btn-primary" role="button">AJUKAN</a>
 		      </div>
 		    </center>
 	</div>
@@ -48,7 +48,7 @@
 		      <img src="{{ asset('img/document.png') }}" alt="..." class="img-circle img-responsive img-raised" >
 		      <div class="caption"><br>
 		        <p>Surat Keterangan Perbedaan Data</p><br>
-		        <a href="#" class="btn btn-primary" role="button">AJUKAN</a>
+		        <a href="{{ route('plynCtrl@detPD') }}" class="btn btn-primary" role="button">AJUKAN</a>
 		      </div>
 		    </center>
 	</div>
@@ -59,7 +59,7 @@
 		      <img src="{{ asset('img/document.png') }}" alt="..." class="img-circle img-responsive img-raised" >
 		      <div class="caption"><br>
 		        <p>Surat Keterangan Domisili Usaha</p><br>
-		        <a href="#" class="btn btn-primary" role="button">AJUKAN</a>
+		        <a href="{{ route('plynCtrl@detDU') }}" class="btn btn-primary" role="button">AJUKAN</a>
 		      </div>
 		    </center>
 		</div>
@@ -68,7 +68,7 @@
 		      <img src="{{ asset('img/document.png') }}" alt="..." class="img-circle img-responsive img-raised" >
 		      <div class="caption"><br>
 		        <p>Surat Keterangan Berkelakuan Baik</p><br>
-		        <a href="#" class="btn btn-primary" role="button">AJUKAN</a>
+		        <a href="{{ route('plynCtrl@detBB') }}" class="btn btn-primary" role="button">AJUKAN</a>
 		      </div>
 		    </center>
 		</div>
@@ -77,7 +77,7 @@
 		      <img src="{{ asset('img/document.png') }}" alt="..." class="img-circle img-responsive img-raised" >
 		      <div class="caption"><br>
 		        <p>Surat Izin Keramaian</p><br>
-		        <a href="#" class="btn btn-primary" role="button">AJUKAN</a>
+		        <a href="{{ route('plynCtrl@detSik') }}" class="btn btn-primary" role="button">AJUKAN</a>
 		      </div>
 		    </center>
 		</div>
